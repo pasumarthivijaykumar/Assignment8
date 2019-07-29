@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "b30b70e9-7637-4451-9acb-23284a2d811f",
+		"name": "AnuAssignment8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put Student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sId\": 2,\n    \"sName\": \"anu\",\n    \"address\": \"vinn\",\n    \"age\": 3,\n    \"level\": \"sophomore\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:28044/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28044",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28044/student/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28044",
+					"path": [
+						"student",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28044/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28044",
+					"path": [
+						"student",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All Cache",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:28044/student/cache",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28044",
+					"path": [
+						"student",
+						"cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sId\": 1,\n    \"sName\": \"anu\",\n    \"address\": \"v\",\n    \"age\": 3,\n    \"level\": \"freshman\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:28044/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28044",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configDelay",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"value\":1500\n}"
+				},
+				"url": {
+					"raw": "http://localhost:28044/config/delay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "28044",
+					"path": [
+						"config",
+						"delay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
